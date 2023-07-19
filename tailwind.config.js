@@ -10,6 +10,12 @@ module.exports = {
       backgroundImage: {
         'mesh': "url('/background.png')",
       },
+      boxShadow: {
+        nav: '0 50px 60px #00000095',
+      },
+      animation: {
+        'navbar': 'show-navbar .4s forwards',
+      }
     },
     colors: {
       'white': '#FFFFFF',
@@ -21,6 +27,10 @@ module.exports = {
         '400': '#555555',
         '500': '#7F7979',
       }
+    },
+    fontFamily: {
+      'lexend': ["Lexend", "sans-serif"],
+      'inter': ["Inter", "sans-serif"],
     }
   },
   plugins: [],
