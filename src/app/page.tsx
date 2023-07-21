@@ -1,5 +1,5 @@
 import fonts from "@/fonts";
-import { Header } from "@/components";
+import { Header, Intro } from "@/components";
 import { NavbarProvider } from "@/contexts";
 
 export default function Home() {
@@ -10,6 +10,8 @@ export default function Home() {
       <NavbarProvider>
         <Header />
       </NavbarProvider>
+
+      <Intro />
     </main>
   )
 }
