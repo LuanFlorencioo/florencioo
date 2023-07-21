@@ -1,5 +1,5 @@
 import fonts from "@/fonts";
-import { Header, Intro } from "@/components";
+import { Header, Intro, Skills } from "@/components";
 import { NavbarProvider } from "@/contexts";
 
 export default function Home() {
@@ -12,6 +12,8 @@ export default function Home() {
       </NavbarProvider>
 
       <Intro />
+      
+      <Skills />
     </main>
   )
 }
