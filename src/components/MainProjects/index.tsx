@@ -4,7 +4,7 @@ import Title from "./Title";
 
 export default function MainProjects() {
   return (
-    <section id="principais-projetos" className="w-full py-20 px-5 bg-[url('/background-3.svg')] bg-cover bg-top bg-no-repeat relative">
+    <section id="projetos" className="w-full py-20 px-5 bg-[url('/background-3.svg')] bg-cover bg-top bg-no-repeat relative">
       <div className="box-container flex flex-col items-center gap-10">
         <Title />
 
