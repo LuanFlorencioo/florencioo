@@ -31,4 +31,8 @@ export const frontend = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
     name: "TailwindCSS",
   },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    name: "Redux",
+  },
 ];
