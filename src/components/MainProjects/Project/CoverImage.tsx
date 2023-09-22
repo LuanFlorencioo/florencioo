@@ -10,9 +10,9 @@ export default function CoverImage({ image }: CoverImageProps) {
       <Image
         src={image}
         alt="Project Image"
-        width={200}
-        height={155}
-        className="w-full h-full rounded"
+        width={1920}
+        height={1080}
+        className="w-full h-full rounded object-cover"
         priority
       />
     </figure>

@@ -9,7 +9,7 @@ interface ProjectData {
 
 const projects: ProjectData[] = [
   {
-    coverImage: "/images/motor-shop.png",
+    coverImage: "/images/logo-motors-shop.svg",
     title: "Motors Shop",
     tags: [
       "Next.js",
@@ -21,7 +21,7 @@ const projects: ProjectData[] = [
     app: "https://motorshop-joaobuga35.vercel.app/",
   },
   {
-    coverImage: "/images/habitum.png",
+    coverImage: "/images/logo-habitum.svg",
     title: "Habitum",
     tags: [
       "React",
@@ -33,7 +33,7 @@ const projects: ProjectData[] = [
     app: "https://web-ecru-alpha.vercel.app/",
   },
   {
-    coverImage: "/images/easybank.png",
+    coverImage: "/images/logo-easybank.svg",
     title: "Easybank",
     tags: [
       "Next.js",
