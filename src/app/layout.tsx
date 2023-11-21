@@ -1,6 +1,7 @@
-import { ReactNode } from 'react'
-import type { Metadata } from 'next'
-import './globals.css'
+import { ReactNode } from 'react';
+import type { Metadata } from 'next';
+import { font } from '@/styles';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Florencioo',
@@ -13,7 +14,7 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="pt-BR" className={font.className}>
       <body>
         {children}
       </body>
