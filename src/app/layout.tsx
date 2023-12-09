@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
+import { Header } from '@/components';
 import { font } from '@/styles';
 import './globals.css';
 
@@ -14,8 +15,9 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="pt-BR" className={font.className}>
+    <html lang='pt-BR' className={font.className}>
       <body>
+        <Header />
         {children}
       </body>
     </html>
