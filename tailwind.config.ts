@@ -3,6 +3,7 @@ import type { Config } from 'tailwindcss';
 const config: Config = {
   content: [
     './src/app/**/*.tsx',
+    './src/components/**/*.tsx',
   ],
   theme: {
     extend: {
@@ -14,7 +15,43 @@ const config: Config = {
           '400': '#C8E8FE',
           '500': '#F0F9FF',
         },
-      }
+      },
+      maxWidth: {
+        'default': '1200px',
+      },
+      animation: {
+        'button-mobile': 'rotateToRight .4s forwards',
+        'navbar': 'fadeIn .4s forwards',
+        'header': 'fadeInToBottom .4s forwards 1s',
+      },
+      keyframes: {
+        rotateToRight: {
+          'from': {
+            transform: 'rotate(0deg)',
+          },
+          'to': {
+            transform: 'rotate(360deg)',
+          },
+        },
+        fadeIn: {
+          'from': {
+            opacity: '0',
+          },
+          'to': {
+            opacity: '1',
+          },
+        },
+        fadeInToBottom: {
+          'from': {
+            opacity: '0',
+            transform: 'translateY(-100%)',
+          },
+          'to': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+      },
     },
   },
   plugins: [],
