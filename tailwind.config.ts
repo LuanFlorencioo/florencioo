@@ -7,6 +7,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'blob': "url('../assets/backgrounds/blob.svg')"
+      },
       colors: {
         brand: {
           '100': '#01121E',
