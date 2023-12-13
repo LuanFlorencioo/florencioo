@@ -26,6 +26,7 @@ const config: Config = {
         'button-mobile': 'rotateToRight .4s forwards',
         'navbar': 'fadeIn .4s forwards',
         'header': 'fadeInToBottom .4s forwards 1s',
+        'home-hero': 'fadeIn 2s forwards 5s',
       },
       keyframes: {
         rotateToRight: {
