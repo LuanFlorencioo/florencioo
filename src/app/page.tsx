@@ -7,8 +7,7 @@ export default function Home() {
 
       <HomeGreeting>
         <HomeGreeting.Title>
-          Desenvolvedor Web 
-          <HomeTypewriter
+          Desenvolvedor Web <HomeTypewriter
             words={['Front End.', 'Back End.', 'Full Stack.']}
             loop={true}
           />
