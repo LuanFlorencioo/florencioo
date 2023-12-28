@@ -4,8 +4,10 @@ import {
   HomeGreeting,
   HomeHero,
   HomeTypewriter,
+  HomeKnowledge,
+  HomeKnowledgeCard,
 } from '@/components';
-import { pages } from '@/data';
+import { knowledges, pages } from '@/data';
 import Me from '@/assets/imgs/me.png';
 
 export default function Home() {
@@ -51,6 +53,38 @@ export default function Home() {
 
         <HomeAbout.Figure src={Me} alt='Me' />
       </HomeAbout>
+
+      <HomeKnowledge>
+        <HomeKnowledge.Title>
+          Conhecimento
+        </HomeKnowledge.Title>
+
+        <HomeKnowledge.Text>
+          A busca constante pela evolução e a atualização contínua são elementos cruciais
+        </HomeKnowledge.Text>
+
+        <HomeKnowledge.CardList>
+          {
+            knowledges.map(({ label, description, icon }) => (
+              <HomeKnowledgeCard key={label}>
+                <HomeKnowledgeCard.Icon icon={icon} />
+
+                <HomeKnowledgeCard.Title>{label}</HomeKnowledgeCard.Title>
+
+                <HomeKnowledgeCard.Text>{description}</HomeKnowledgeCard.Text>
+              </HomeKnowledgeCard>
+            ))
+          }
+        </HomeKnowledge.CardList>
+
+        <HomeKnowledge.Text>
+          Clique no botão abaixo para ver quais são as tecnologias, frameworks e ferramentas que utilizo
+        </HomeKnowledge.Text>
+
+        <Button href={pages.find(page => page.label === 'Conhecimento')?.href}>
+          Saber Mais
+        </Button>
+      </HomeKnowledge>
     </main>
   )
 }

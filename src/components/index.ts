@@ -5,6 +5,8 @@ import HomeTypewriter from './HomeTypewriter';
 import Button from './Button';
 import { HomeGreeting } from './HomeGreeting';
 import { HomeAbout } from './HomeAbout';
+import { HomeKnowledge } from './HomeKnowledge';
+import { HomeKnowledgeCard } from './HomeKnowledgeCard';
 
 export {
   Header,
@@ -14,4 +16,6 @@ export {
   HomeGreeting,
   HomeAbout,
   Button,
+  HomeKnowledge,
+  HomeKnowledgeCard,
 }
