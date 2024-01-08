@@ -8,7 +8,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'blob': "url('../assets/backgrounds/blob.svg')"
+        'blob': "url('../assets/backgrounds/blob.svg')",
+        'home-about': "url('../assets/backgrounds/home-about.svg')",
       },
       colors: {
         brand: {
