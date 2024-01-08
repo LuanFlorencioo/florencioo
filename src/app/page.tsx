@@ -39,16 +39,14 @@ export default function Home() {
           </HomeAbout.Text>
 
           <HomeAbout.Text>
-            Desde ainda pequeno, sempre me interessei por tecnologia e pude encontrar nisso uma vocação intrínseca alinhado a minha criatividade e vontade de absorver conhecimento.
+            Sou desenvolvedor web com habilidades em <em className='text-brand-300'>Javascript</em>, <em className='text-brand-300'>Typescript</em>, <em className='text-brand-300'>React</em>, <em className='text-brand-300'>NextJs</em>, <em className='text-brand-300'>Node</em>, <em className='text-brand-300'>NestJs</em> e entre outras tecnologias e frameworks.
           </HomeAbout.Text>
 
           <HomeAbout.Text>
-            Sou desenvolvedor web com muito orgulho pelo o que faço, tendo diversos projetos e aplicações que realizei durante toda essa minha jornada com estudos e aprofundamento.
+            Desde ainda pequeno, sempre me interessei por tecnologia e pude encontrar nisso uma vocação intrínseca alinhado a minha criatividade e vontade de absorver conhecimento.
           </HomeAbout.Text>
 
-          <Button href={pages.find(page => page.label === 'Sobre Mim')?.href}>
-            Ler Mais
-          </Button>
+          <HomeAbout.Buttons />
         </HomeAbout.Article>
 
         <HomeAbout.Figure src={Me} alt='Me' />
