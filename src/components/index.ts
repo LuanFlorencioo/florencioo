@@ -3,6 +3,7 @@ import Footer from './Footer';
 import HomeHero from './HomeHero';
 import HomeTypewriter from './HomeTypewriter';
 import Button from './Button';
+import SkillBadge from './SkillBadge';
 import { HomeGreeting } from './HomeGreeting';
 import { HomeAbout } from './HomeAbout';
 import { HomeKnowledge } from './HomeKnowledge';
@@ -18,4 +19,5 @@ export {
   Button,
   HomeKnowledge,
   HomeKnowledgeCard,
+  SkillBadge,
 }

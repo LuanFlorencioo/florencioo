@@ -6,8 +6,9 @@ import {
   HomeTypewriter,
   HomeKnowledge,
   HomeKnowledgeCard,
+  SkillBadge,
 } from '@/components';
-import { knowledges, pages } from '@/data';
+import { knowledges, pages, skills } from '@/data';
 import Me from '@/assets/imgs/me.png';
 
 export default function Home() {
@@ -75,12 +76,20 @@ export default function Home() {
           }
         </HomeKnowledge.CardList>
 
-        <HomeKnowledge.Text>
-          Clique no botão abaixo para ver quais são as tecnologias, frameworks e ferramentas que utilizo
-        </HomeKnowledge.Text>
+        <HomeKnowledge.Title>
+          Habilidades
+        </HomeKnowledge.Title>
+
+        <HomeKnowledge.SkillsContainer>
+          {
+            skills.map(({ image, label }) => (
+              <SkillBadge key={label} image={image} label={label} />
+            ))
+          }
+        </HomeKnowledge.SkillsContainer>
 
         <Button href={pages.find(page => page.label === 'Conhecimento')?.href}>
-          Saber Mais
+          Saiba mais
         </Button>
       </HomeKnowledge>
     </main>
