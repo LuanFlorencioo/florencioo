@@ -7,6 +7,7 @@ import {
   HomeKnowledge,
   HomeKnowledgeCard,
   SkillBadge,
+  ArrowToTop,
 } from '@/components';
 import { knowledges, pages, skills } from '@/data';
 import Me from '@/assets/imgs/me.png';
@@ -52,6 +53,8 @@ export default function Home() {
 
         <HomeAbout.Figure src={Me} alt='Me' />
       </HomeAbout>
+
+      <ArrowToTop />
 
       <HomeKnowledge>
         <HomeKnowledge.Title>

@@ -4,6 +4,7 @@ import HomeHero from './HomeHero';
 import HomeTypewriter from './HomeTypewriter';
 import Button from './Button';
 import SkillBadge from './SkillBadge';
+import ArrowToTop from './ArrowToTop';
 import { HomeGreeting } from './HomeGreeting';
 import { HomeAbout } from './HomeAbout';
 import { HomeKnowledge } from './HomeKnowledge';
@@ -20,4 +21,5 @@ export {
   HomeKnowledge,
   HomeKnowledgeCard,
   SkillBadge,
+  ArrowToTop,
 }
