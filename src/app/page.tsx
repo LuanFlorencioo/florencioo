@@ -8,8 +8,9 @@ import {
   HomeKnowledgeCard,
   SkillBadge,
   ArrowToTop,
+  HomeProjects,
 } from '@/components';
-import { knowledges, pages, skills } from '@/data';
+import { knowledges, pages, skills, highlightProjects } from '@/data';
 import Me from '@/assets/imgs/me.png';
 
 export default function Home() {
@@ -95,6 +96,32 @@ export default function Home() {
           Saiba mais
         </Button>
       </HomeKnowledge>
+
+      <HomeProjects>
+        <HomeProjects.Dialog />
+
+        <HomeProjects.Title>
+          Principais Projetos
+        </HomeProjects.Title>
+
+        {
+          highlightProjects.map((project, i) => (
+            <HomeProjects.ProjectCard
+              key={i}
+              title={project.title}
+              imagePreview={project.image}
+              description={project.description}
+              tags={project.tags}
+              appLink={project.app}
+              repoLink={project.repo}
+            />
+          ))
+        }
+
+        <Button href={pages.find(page => page.label === 'Projetos')?.href}>
+          Ver mais projetos
+        </Button>
+      </HomeProjects>
     </main>
   )
 }
