@@ -3,6 +3,7 @@ import type { Page } from './pages';
 import { knowledges } from './knowledges';
 import type { Skill } from './skills';
 import { skills } from './skills';
+import { highlightProjects } from './highlightProjects';
 
 export {
   pages,
@@ -10,4 +11,5 @@ export {
   knowledges,
   skills,
   Skill,
+  highlightProjects,
 }
