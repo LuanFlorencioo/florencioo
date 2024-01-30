@@ -9,9 +9,11 @@ import {
   SkillBadge,
   ArrowToTop,
   HomeProjects,
+  HomeContact,
 } from '@/components';
 import { knowledges, pages, skills, highlightProjects } from '@/data';
 import Me from '@/assets/imgs/me.png';
+import ContactPicture from '@/assets/imgs/contact-picture.jpg';
 
 export default function Home() {
   return (
@@ -122,6 +124,26 @@ export default function Home() {
           Ver mais projetos
         </Button>
       </HomeProjects>
+
+      <HomeContact>
+        <HomeContact.Article>
+          <HomeContact.Content>
+            <HomeContact.Contact
+              type='email'
+              value='luanflorencio.dev@gmail.com'
+            />
+
+            <HomeContact.Contact
+              type='phone'
+              value='+55 21 96421-6903'
+            />
+
+            <HomeContact.SocialMedia />
+          </HomeContact.Content>
+
+          <HomeContact.Figure src={ContactPicture} alt='Contact Picture' />
+        </HomeContact.Article>
+      </HomeContact>
     </main>
   )
 }

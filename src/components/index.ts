@@ -10,6 +10,7 @@ import { HomeGreeting } from './HomeGreeting';
 import { HomeAbout } from './HomeAbout';
 import { HomeKnowledge } from './HomeKnowledge';
 import { HomeKnowledgeCard } from './HomeKnowledgeCard';
+import { HomeContact } from './HomeContact';
 
 export {
   Header,
@@ -24,4 +25,5 @@ export {
   SkillBadge,
   ArrowToTop,
   HomeProjects,
+  HomeContact,
 }
