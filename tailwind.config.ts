@@ -14,6 +14,7 @@ const config: Config = {
         'blob': "url('../assets/backgrounds/blob.svg')",
         'home-about': "url('../assets/backgrounds/home-about.svg')",
         'home-projects': "url(../assets/backgrounds/home-projects.svg)",
+        'home-contact': "url(../assets/backgrounds/home-contacts.svg)",
       },
       colors: {
         brand: {
