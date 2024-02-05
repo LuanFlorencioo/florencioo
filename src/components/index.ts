@@ -5,6 +5,7 @@ import HomeTypewriter from './HomeTypewriter';
 import Button from './Button';
 import SkillBadge from './SkillBadge';
 import ArrowToTop from './ArrowToTop';
+import Faq from './Faq';
 import { HomeProjects } from './HomeProjects';
 import { HomeGreeting } from './HomeGreeting';
 import { HomeAbout } from './HomeAbout';
@@ -26,4 +27,5 @@ export {
   ArrowToTop,
   HomeProjects,
   HomeContact,
+  Faq,
 }
