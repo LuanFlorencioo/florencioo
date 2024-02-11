@@ -6,6 +6,9 @@ import Button from './Button';
 import SkillBadge from './SkillBadge';
 import ArrowToTop from './ArrowToTop';
 import Faq from './Faq';
+import InputFilterTech from './InputFilterTech';
+import KnowledgeTechs from './KnowledgeTechs';
+import TitlePage from './TitlePage';
 import { HomeProjects } from './HomeProjects';
 import { HomeGreeting } from './HomeGreeting';
 import { HomeAbout } from './HomeAbout';
@@ -28,4 +31,7 @@ export {
   HomeProjects,
   HomeContact,
   Faq,
+  InputFilterTech,
+  KnowledgeTechs,
+  TitlePage,
 }
