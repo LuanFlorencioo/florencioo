@@ -1,20 +1,12 @@
 import Link from 'next/link';
-import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
-import { Faq } from '@/components';
+import { FaArrowRightLong } from 'react-icons/fa6';
+import { Faq, TitlePage } from '@/components';
 
 export default function Sobre() {
   return (
     <main className='w-full min-h-screen px-4 pt-40 pb-60 bg-brand-500 md:selection:bg-brand-200 md:selection:text-brand-500'>
-      <div className='w-full max-w-3xl mx-auto flex flex-col gap-20'>
-        <div className='w-full flex flex-col items-start gap-5'>
-          <Link href='/' className='flex items-center gap-2 text-brand-300 opacity-75 md:hover:opacity-100'>
-            <FaArrowLeftLong /> Voltar ao início
-          </Link>
-
-          <h2 className='font-bold text-5xl text-brand-200 uppercase'>
-            Sobre Mim
-          </h2>
-        </div>
+      <div className='w-full max-w-4xl mx-auto flex flex-col gap-20'>
+        <TitlePage>Sobre Mim</TitlePage>
 
         <ul className='w-full flex flex-col items-start gap-2'>
           <li className='text-base text-brand-100'>
