@@ -7,13 +7,15 @@ import { FaArrowLeftLong } from 'react-icons/fa6';
 
 type TitlePageProps = {
   children: ReactNode;
+  textReturn?: string;
+  linkReturn?: string;
 }
 
-export default function TitlePage({ children }: TitlePageProps) {
+export default function TitlePage({ children, textReturn, linkReturn }: TitlePageProps) {
   return (
     <div className='w-full flex flex-col items-start gap-5'>
-      <Link href='/' className='flex items-center gap-2 text-brand-300 opacity-75 md:hover:opacity-100'>
-        <FaArrowLeftLong /> Voltar ao início
+      <Link href={linkReturn ?? '/'} className='flex items-center gap-2 text-brand-300 opacity-75 md:hover:opacity-100'>
+        <FaArrowLeftLong /> {textReturn ?? 'Voltar ao início'}
       </Link>
 
       <motion.h2 className='font-bold text-4xl md:text-5xl text-brand-200 uppercase'
