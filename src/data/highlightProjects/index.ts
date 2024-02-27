@@ -1,4 +1,4 @@
-type Project = {
+type HighlightProject = {
   title: string;
   image: string;
   description: string;
@@ -7,10 +7,10 @@ type Project = {
   app: string;
 }
 
-export const highlightProjects: Project[] = [
+export const highlightProjects: HighlightProject[] = [
   {
     title: 'Todo App',
-    image: '/imgs/projects/todo-app/main.png',
+    image: 'https://qyydlvjdpkbnmtwljmdt.supabase.co/storage/v1/object/public/project-images/todo-app/alt-1.png',
     description: 'Um simples e rápido gerenciador de tarefas online',
     tags: ['reactjs', 'typescript', 'zustand'],
     app: 'https://lf-todo-app.vercel.app/',
@@ -18,7 +18,7 @@ export const highlightProjects: Project[] = [
   },
   {
     title: 'News Homepage',
-    image: '/imgs/projects/news-homepage/main.png',
+    image: 'https://qyydlvjdpkbnmtwljmdt.supabase.co/storage/v1/object/public/project-images/news-homepage/alt-1.png',
     description: 'Uma página inicial de notícias estáticas que se adapta a diferentes idiomas',
     tags: ['nextjs', 'typescript', 'tailwindCSS'],
     app: 'https://lf-news-homepage.vercel.app',
@@ -26,7 +26,7 @@ export const highlightProjects: Project[] = [
   },
   {
     title: 'Easybank',
-    image: '/imgs/projects/easybank/main.png',
+    image: 'https://qyydlvjdpkbnmtwljmdt.supabase.co/storage/v1/object/public/project-images/easybank/main.png',
     description: 'Landing Page sobre um banco digital online',
     tags: ['nextjs', 'typescript', 'tailwindCSS'],
     app: 'https://lf-easybank.vercel.app',
