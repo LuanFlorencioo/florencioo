@@ -29,23 +29,21 @@ export default function Faq() {
         </Ask>
 
         <Ask question='Quais são seus 5 filmes favoritos?'>
-          <ul className='w-full flex flex-col gap-2 text-brand-100 md:selection:bg-brand-200 md:selection:text-brand-500'>
-            <li>
-              <p>1° - <strong>Interestelar</strong></p>
-            </li>
-            <li>
-              <p>2° - <strong>A Origem</strong></p>
-            </li>
-            <li>
-              <p>3° - <strong>A Chegada</strong></p>
-            </li>
-            <li>
-              <p>4° - <strong>O Predestinado</strong></p>
-            </li>
-            <li>
-              <p>5° - <strong>Projeto Almanaque</strong></p>
-            </li>
-          </ul>
+          <ol className='w-full flex flex-col gap-2 text-brand-100 md:selection:bg-brand-200 md:selection:text-brand-500'>
+            {
+              [
+                'Interestelar',
+                'A Origem',
+                'A Chegada',
+                'Cidade de Deus',
+                'Projeto Almanaque',
+              ].map((movie, i) => (
+                <li key={movie}>
+                  <p>{i + 1}° - <strong>{movie}</strong></p>
+                </li>
+              ))
+            }
+          </ol>
         </Ask>
 
         <Ask question='Quais tecnologias você utilizou na construção deste site?'>
