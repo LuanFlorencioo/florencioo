@@ -1,15 +1,14 @@
+import { FlorenciooLogo } from '@/components';
 import { pages } from '@/data';
-import Copyright from './Copyright';
 import FooterNav from './FooterNav';
-import FooterTitle from './FooterTitle';
 
 export default function Footer() {
   return (
-    <footer className='w-full px-4 py-20 static bottom-0 left-0 bg-blob bg-cover bg-no-repeat md:bg-center'>
-      <div className='max-w-default mx-auto flex flex-col gap-12 md:flex-row md:flex-wrap md:justify-between'>
-        <FooterTitle>
-          Florencioo
-        </FooterTitle>
+    <footer className='w-full px-4 py-20 static bottom-0 left-0 bg-dark-3 bg-cover bg-no-repeat md:bg-center'>
+      <div className='max-w-default mx-auto flex flex-col gap-12'>
+        <span className='w-full'>
+          <FlorenciooLogo style='light' />
+        </span>
 
         <FooterNav.Root>
           <FooterNav.MainPageList>
@@ -23,23 +22,19 @@ export default function Footer() {
           </FooterNav.MainPageList>
 
           <FooterNav.OtherPageList>
-            <FooterNav.Link href='/meu-curriculo'>
-              Meu Currículo
+            <FooterNav.Link target='_blank' href='https://docs.google.com/document/d/1q4wOX2x_j2vgnr4EXCb_WEP__a1DR9I-xlj7ao89GMM/edit?usp=sharing'>
+              Curriculum vitæ
             </FooterNav.Link>
 
-            <FooterNav.Link href='/faq'>
-              FAQ
+            <FooterNav.Link target='_blank' href='https://linkedin.com/in/luanflorencioo/'>
+              LinkedIn
             </FooterNav.Link>
 
-            <FooterNav.Link href='/sobre-este-portfolio'>
-              Sobre Este Portfólio
+            <FooterNav.Link target='_blank' href='https://github.com/LuanFlorencioo/'>
+              Github
             </FooterNav.Link>
           </FooterNav.OtherPageList>
         </FooterNav.Root>
-
-        <Copyright>
-          2023 © Copyrights. Todos os direitos reservados.
-        </Copyright>
       </div>
     </footer>
   )

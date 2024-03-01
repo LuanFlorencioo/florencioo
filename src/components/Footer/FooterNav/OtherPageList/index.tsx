@@ -6,7 +6,7 @@ type OtherPageListProps = {
 
 export default function OtherPageList({ children }: OtherPageListProps) {
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className="flex flex-col gap-4 md:items-end">
       {children}
     </ul>
   )
