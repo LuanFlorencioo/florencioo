@@ -4,7 +4,7 @@ import { Faq, TitlePage } from '@/components';
 
 export default function Sobre() {
   return (
-    <main className='w-full min-h-screen px-4 pt-40 pb-60 bg-brand-500 md:selection:bg-brand-200 md:selection:text-brand-500'>
+    <main className='w-full min-h-screen px-4 pt-40 pb-60 bg-brand-500 bg-light-1 bg-cover bg-right-top md:selection:bg-brand-200 md:selection:text-brand-500'>
       <div className='w-full max-w-4xl mx-auto flex flex-col gap-20'>
         <TitlePage>Sobre Mim</TitlePage>
 

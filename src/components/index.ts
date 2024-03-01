@@ -11,6 +11,7 @@ import KnowledgeTechs from './KnowledgeTechs';
 import TitlePage from './TitlePage';
 import ProjectList from './ProjectList';
 import ImageDialog from './ImageDialog';
+import FlorenciooLogo from './FlorenciooLogo';
 import { HomeProjects } from './HomeProjects';
 import { HomeGreeting } from './HomeGreeting';
 import { HomeAbout } from './HomeAbout';
@@ -42,4 +43,5 @@ export {
   ProjectCard,
   ImageDialog,
   Project,
+  FlorenciooLogo,
 }

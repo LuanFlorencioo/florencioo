@@ -11,10 +11,14 @@ const config: Config = {
         'xs': '480px',
       },
       backgroundImage: {
-        'blob': "url('../assets/backgrounds/blob.svg')",
-        'home-about': "url('../assets/backgrounds/home-about.svg')",
-        'home-projects': "url(../assets/backgrounds/home-projects.svg)",
-        'home-contact': "url(../assets/backgrounds/home-contacts.svg)",
+        'dark-1': "url(/backgrounds/dark-1.svg)",
+        'dark-2': "url(/backgrounds/dark-2.svg)",
+        'dark-3': "url(/backgrounds/dark-3.svg)",
+        'dark-4': "url(/backgrounds/dark-4.svg)",
+        'dark-5': "url(/backgrounds/dark-5.svg)",
+        'light-1': "url(/backgrounds/light-1.svg)",
+        'light-2': "url(/backgrounds/light-2.svg)",
+        'light-3': "url(/backgrounds/light-3.svg)",
       },
       colors: {
         brand: {

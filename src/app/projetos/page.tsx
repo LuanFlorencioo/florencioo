@@ -14,7 +14,7 @@ export default async function Projetos() {
   const { projects } = useProjectsStore();
 
   return (
-    <main className='w-full min-h-screen px-4 pt-40 pb-60 bg-brand-100 relative'>
+    <main className='w-full min-h-screen px-4 pt-40 pb-60 bg-brand-100 bg-dark-4 bg-cover bg-right-top relative'>
       <section className='w-full max-w-sm mx-auto md:max-w-3xl lg:max-w-5xl flex flex-col gap-20'>
         <TitlePage>Projetos</TitlePage>
 

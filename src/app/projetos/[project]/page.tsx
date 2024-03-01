@@ -12,7 +12,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   const project = projects?.find(({ link_page }) => link_page === params.project);
 
   return project ? (
-    <main className='w-full min-h-screen px-4 pt-40 pb-60 bg-brand-100 relative'>
+    <main className='w-full min-h-screen px-4 pt-40 pb-60 bg-brand-100 bg-dark-5 bg-cover bg-center relative'>
       <section className='w-full max-w-5xl mx-auto flex flex-col gap-10'>
         <TitlePage textReturn='Voltar aos projetos' linkReturn='/projetos'>
           {project.name}
