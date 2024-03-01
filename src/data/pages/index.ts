@@ -1,4 +1,4 @@
-export type Page = {
+type Page = {
   href: string,
   label: string,
 };

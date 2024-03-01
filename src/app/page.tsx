@@ -11,7 +11,7 @@ import {
   HomeProjects,
   HomeContact,
 } from '@/components';
-import { knowledges, pages, skills, highlightProjects } from '@/data';
+import { knowledges, skills, highlightProjects } from '@/data';
 import Me from '@/assets/imgs/me.png';
 import ContactPicture from '@/assets/imgs/contact-picture.jpg';
 
@@ -94,7 +94,7 @@ export default function Home() {
           }
         </HomeKnowledge.SkillsContainer>
 
-        <Button href={pages.find(page => page.label === 'Conhecimento')?.href}>
+        <Button href={'/conhecimento'}>
           Saiba mais
         </Button>
       </HomeKnowledge>
@@ -120,7 +120,7 @@ export default function Home() {
           ))
         }
 
-        <Button href={pages.find(page => page.label === 'Projetos')?.href}>
+        <Button href={'/projetos'}>
           Ver mais projetos
         </Button>
       </HomeProjects>
