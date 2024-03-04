@@ -5,8 +5,8 @@ import { font } from '@/styles';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Florencioo',
-  description: 'Portfolio profissional do Luan Florencio como desenvolvedor web',
+  title: 'Luan Florencio Dev.',
+  description: 'Website e portfolio profissional do desenvolvedor Web Fullstack Luan Florencio. Confira e conheça um pouco mais sobre a carreira e seus projetos pessoais como desenvoledor e programador.',
 }
 
 type RootLayoutProps = {
