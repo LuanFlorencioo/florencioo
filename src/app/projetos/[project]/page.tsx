@@ -1,5 +1,7 @@
 import { ArrowToTop, TitlePage, Project } from '@/components';
 import { useProjectsStore } from '@/store';
+import { Project as ProjectT } from '@/models';
+import { fetchProjectsData } from '@/utils';
 
 type ProjectPageProps = {
   params: {
@@ -7,7 +9,14 @@ type ProjectPageProps = {
   }
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { hasProjects, updateState } = useProjectsStore();
+
+  if (!hasProjects) {
+    const data: ProjectT[] = await fetchProjectsData();
+    updateState(data);
+  }
+
   const { projects } = useProjectsStore();
   const project = projects?.find(({ link_page }) => link_page === params.project);
 
@@ -44,9 +53,9 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           {
             project.images.map((image, i) => (
               <Project.Image
-                key={`${project.name} image-${i + 1}`}
+                key={`${project!.name} image-${i + 1}`}
                 src={image}
-                alt={`${project.name} image ${i + 1}`}
+                alt={`${project!.name} image ${i + 1}`}
               />
             ))
           }

@@ -1,14 +1,14 @@
 import { ArrowToTop, ImageDialog, ProjectCard, ProjectList, TitlePage } from '@/components';
 import { useProjectsStore } from '@/store';
-import { getAPIData } from '@/utils';
 import { Project } from '@/models';
+import { fetchProjectsData } from '@/utils';
 
 export default async function Projetos() {
   const { updateState, hasProjects } = useProjectsStore();
 
   if (!hasProjects) {
-    const data: Project[] | null = await getAPIData('projects');
-    updateState(data ?? []);
+    const data: Project[] = await fetchProjectsData();
+    updateState(data);
   }
 
   const { projects } = useProjectsStore();

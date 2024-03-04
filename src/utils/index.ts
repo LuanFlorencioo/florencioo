@@ -1,7 +1,5 @@
-import { api } from './api';
-import { getAPIData } from './getApiData';
+import { fetchProjectsData } from './fetchProjectsData';
 
 export {
-  api,
-  getAPIData,
+  fetchProjectsData,
 }
