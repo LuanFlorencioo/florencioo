@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div style="display: flex; align-items: center;">
+  <img src="./src/assets/imgs/me.png" width="150" height="150" />
+  <h1 style="color: #46b6ff">Luan Florencio</h1>
+</div>
 
-## Getting Started
+Sinta-se à vontade para explorar meu site pessoal, onde compartilho detalhes sobre minha trajetória profissional como desenvolvedor web. Lá, você terá acesso aos meus mais recentes e destacados projetos, assim como às formas de entrar em contato comigo. Convido você a conferir em [florencioo.vercel.app](https://florencioo.vercel.app/) e conhecer mais sobre meu trabalho e experiência.
 
-First, run the development server:
+## Tecnologias usadas:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![Typescript](https://img.shields.io/badge/TypeScript-01121e?style=for-the-badge&logo=typescript&logoColor=0099ff)](https://www.typescriptlang.org/)
+> TypeScript é uma linguagem de programação fortemente tipada baseada em JavaScript, oferecendo melhores ferramentas em qualquer escala.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![NextJS](https://img.shields.io/badge/Nextjs-01121e?style=for-the-badge&logo=next.js&logoColor=0099ff)](https://nextjs.org/)
+> Next.js é uma estrutura React para construir aplicativos web full-stack. Permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[![Tailwindcss](https://img.shields.io/badge/tailwindcss-01121e?style=for-the-badge&logo=tailwindcss&logoColor=0099ff)](https://tailwindcss.com/)
+> Tailwind CSS é uma estrutura CSS de código aberto. A principal característica desta biblioteca é que, ao contrário de outros frameworks CSS como Bootstrap, ela não fornece uma série de classes predefinidas para elementos como botões ou tabelas.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[![FramerMotion](https://img.shields.io/badge/Framer_motion-01121e?style=for-the-badge&logo=framer&logoColor=0099ff)](https://www.framer.com/motion/)
+> Framer Motion é uma biblioteca de animações que permite manipular transições e animações em componentes de maneira simples e prática.
 
-## Learn More
+[![Zustand](https://img.shields.io/badge/Zustand-01121e?style=for-the-badge&logo=zustand&logoColor=0099ff)](https://docs.pmnd.rs/zustand/getting-started/introduction)
+> Zustand é uma biblioteca de gerenciamento de estados simples, rápida e escalável usando princípios de fluxo simplificados. Possui uma API confortável baseada em ganchos.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Demostração](./public/demo/banner-1.png)
