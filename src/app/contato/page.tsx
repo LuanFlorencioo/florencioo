@@ -1,28 +1,18 @@
-import { HomeContact } from '@/components';
-import ContactPicture from '@/assets/imgs/contact-picture.jpg';
+import { ContactsInfo } from '@/components';
+import { contacts } from '@/data';
 
 export default function Contato() {
   return (
     <main className='w-full min-h-screen bg-brand-500'>
-      <HomeContact>
-        <HomeContact.Article>
-          <HomeContact.Content>
-            <HomeContact.Contact
-              type='email'
-              value='luanflorencio.dev@gmail.com'
-            />
-
-            <HomeContact.Contact
-              type='phone'
-              value='+55 21 96421-6903'
-            />
-
-            <HomeContact.SocialMedia />
-          </HomeContact.Content>
-
-          <HomeContact.Figure src={ContactPicture} alt='Contact Picture' />
-        </HomeContact.Article>
-      </HomeContact>
+      <section className='w-full px-4 py-24 bg-brand-500'>
+        <ContactsInfo
+          email={contacts.email}
+          phone={contacts.phone}
+          link_github={contacts.link_github}
+          link_linkedin={contacts.link_linkedin}
+          link_whatsapp={contacts.link_whatsapp}
+        />
+      </section>
     </main>
   )
 }

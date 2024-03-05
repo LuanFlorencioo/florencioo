@@ -10,10 +10,10 @@ import {
   ArrowToTop,
   HomeProjects,
   HomeContact,
+  ContactsInfo,
 } from '@/components';
-import { knowledges, skills, highlightProjects } from '@/data';
+import { knowledges, skills, highlightProjects, contacts } from '@/data';
 import Me from '@/assets/imgs/me.png';
-import ContactPicture from '@/assets/imgs/contact-picture.jpg';
 
 export default function Home() {
   return (
@@ -126,23 +126,13 @@ export default function Home() {
       </HomeProjects>
 
       <HomeContact>
-        <HomeContact.Article>
-          <HomeContact.Content>
-            <HomeContact.Contact
-              type='email'
-              value='luanflorencio.dev@gmail.com'
-            />
-
-            <HomeContact.Contact
-              type='phone'
-              value='+55 21 96421-6903'
-            />
-
-            <HomeContact.SocialMedia />
-          </HomeContact.Content>
-
-          <HomeContact.Figure src={ContactPicture} alt='Contact Picture' />
-        </HomeContact.Article>
+        <ContactsInfo
+          email={contacts.email}
+          phone={contacts.phone}
+          link_github={contacts.link_github}
+          link_linkedin={contacts.link_linkedin}
+          link_whatsapp={contacts.link_whatsapp}
+        />
       </HomeContact>
     </main>
   )
