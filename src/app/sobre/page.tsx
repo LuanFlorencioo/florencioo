@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { Faq, TitlePage } from '@/components';
-import Me from '@/assets/imgs/me.png';
+import Profile from '@/assets/imgs/profile.png';
 
 export default function Sobre() {
   return (
@@ -10,56 +10,56 @@ export default function Sobre() {
       <div className='w-full max-w-4xl mx-auto flex flex-col gap-10'>
         <TitlePage>Sobre Mim</TitlePage>
 
-        <ul className='w-full flex flex-col items-start gap-2'>
-          <li className='text-base text-brand-100'>
-            <b>Idade:</b> 21 anos
-          </li>
 
-          <li className='text-base text-brand-100'>
-            <b>Localidade:</b> Nova Iguaçu - Rio de Janeiro, Brasil
-          </li>
+        <article className='w-full flex flex-col md:flex-row gap-4'>
+          <figure className='w-full max-w-[120px] md:max-w-[175px] aspect-square'>
+            <Image
+              src={Profile}
+              alt='Foto de perfil'
+              className='w-full h-full object-cover object-center rounded-lg'
+            />
+          </figure>
 
-          <li className='text-base text-brand-100'>
-            <b>Pronomes:</b> ele/dele
-          </li>
+          <ul className='w-full flex flex-col items-start gap-2'>
+            <li className='text-base text-brand-100'>
+              <b>Idade:</b> 21 anos
+            </li>
 
-          <li className='text-base text-brand-100'>
-            <b>Cargo:</b> Desenvolvedor Web FullStack
-          </li>
+            <li className='text-base text-brand-100'>
+              <b>Localidade:</b> Nova Iguaçu - Rio de Janeiro, Brasil
+            </li>
 
-          <li className='text-base text-brand-100'>
-            <b>Idiomas:</b> Inglês, Português (Nativo)
-          </li>
+            <li className='text-base text-brand-100'>
+              <b>Pronomes:</b> ele/dele
+            </li>
 
-          <li className='text-base text-brand-100'>
-            <b>Hobbies:</b> Jogar futebol, Ler livros, Praticar exercícios físicos e Jogar videogames
-          </li>
-        </ul>
+            <li className='text-base text-brand-100'>
+              <b>Cargo:</b> Desenvolvedor Web FullStack
+            </li>
+
+            <li className='text-base text-brand-100'>
+              <b>Idiomas:</b> Inglês, Português (Nativo)
+            </li>
+
+            <li className='text-base text-brand-100'>
+              <b>Hobbies:</b> Jogar futebol, Ler livros, Praticar exercícios físicos e Jogar videogames
+            </li>
+          </ul>
+        </article>
+
 
         <article className='w-full flex flex-col gap-4'>
           <p className='text-base text-brand-100'>
             Meu nome é Luan Florêncio, tenho 21 anos, moro no Rio de Janeiro, e de costume de qualquer carioca, adoro uma praia, churrasco, samba e um bom domingo de futebol para assistir.
           </p>
 
-          <div className='w-full flex justify-between items-start gap-4'>
-            <div className='w-full flex flex-col gap-4'>
-              <p className='text-base text-brand-100'>
-                Sobre mim, caracterizo-me como alguém em constante evolução, dedicado a aprender e expandir meus conhecimentos diariamente, em busca da minha melhor versão. Carrego uma intrínseca criatividade e curiosidade como parte integrante dessa filosofia de vida. Assim como o sol ilumina o dia, acredito que o conhecimento ilumina nossas mentes.
-              </p>
+          <p className='text-base text-brand-100'>
+            Sobre mim, caracterizo-me como alguém em constante evolução, dedicado a aprender e expandir meus conhecimentos diariamente, em busca da minha melhor versão. Carrego uma intrínseca criatividade e curiosidade como parte integrante dessa filosofia de vida. Assim como o sol ilumina o dia, acredito que o conhecimento ilumina nossas mentes.
+          </p>
 
-              <p className='text-base text-brand-100'>
-                Durante o Ensino Médio descobri minha vocação para ser um programador e desenvolvedor, visto que posso dedicar-me apaixonadamente ao trabalho que está sempre em atualização e aprodundar-me contiuamente nas nuances desse campo. A cada dia que passa me apaixono cada vez mais por esse vasto e fascinante universo da programação.
-              </p>
-            </div>
-
-            <figure className='hidden md:block w-full max-w-[350px] aspect-square'>
-              <Image
-                src={Me}
-                alt='Minha Ilustração'
-                className='w-full h-full object-cover object-center'
-              />
-            </figure>
-          </div>
+          <p className='text-base text-brand-100'>
+            Durante o Ensino Médio descobri minha vocação para ser um programador e desenvolvedor, visto que posso dedicar-me apaixonadamente ao trabalho que está sempre em atualização e aprodundar-me contiuamente nas nuances desse campo. A cada dia que passa me apaixono cada vez mais por esse vasto e fascinante universo da programação.
+          </p>
         </article>
 
         <article className='w-full flex flex-col gap-4'>
