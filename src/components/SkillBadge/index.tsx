@@ -2,9 +2,11 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Skill } from '@/data';
 
-type SkillBadgeProps = Skill;
+type SkillBadgeProps = {
+  image: string,
+  label: string,
+}
 
 export default function SkillBadge({ image, label }: SkillBadgeProps) {
   return (
