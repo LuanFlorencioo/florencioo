@@ -1,42 +1,41 @@
 import { create } from 'zustand';
-import { Tech, TechCategory, techs } from '@/data';
-
-type TechType = 'Front-End' | 'Back-End' | 'Banco de Dados' | 'Testes' | 'Controle de Código' | 'Ferramentas';
+import { techs } from '@/data';
+import { Tech, TechCategory, TechCategoryTranslated } from '@/models';
 
 type Data = {
   category: TechCategory;
-  type: TechType;
+  categoryTranslated: TechCategoryTranslated;
 }
 
 const data: Data[] = [
   {
     category: 'front-end',
-    type: 'Front-End',
+    categoryTranslated: 'Front-End',
   },
   {
     category: 'back-end',
-    type: 'Back-End',
+    categoryTranslated: 'Back-End',
   },
   {
     category: 'database',
-    type: 'Banco de Dados',
+    categoryTranslated: 'Banco de Dados',
   },
   {
     category: 'testing',
-    type: 'Testes',
+    categoryTranslated: 'Testes',
   },
   {
     category: 'version-control',
-    type: 'Controle de Código',
+    categoryTranslated: 'Controle de Código',
   },
   {
     category: 'tool',
-    type: 'Ferramentas',
+    categoryTranslated: 'Ferramentas',
   },
 ]
 
 type TechData = {
-  type: TechType;
+  type: TechCategoryTranslated;
   techs: Tech[];
 }
 
@@ -53,9 +52,9 @@ type States = {
 
 type Store = Actions & States;
 
-const techsInVisualizer: TechData[] = data.map(({ category, type }) => {
+const techsInVisualizer: TechData[] = data.map(({ category, categoryTranslated }) => {
   return {
-    type,
+    type: categoryTranslated,
     techs: techs.filter(tech => tech.categories.includes(category))
   }
 })

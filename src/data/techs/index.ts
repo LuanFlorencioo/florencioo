@@ -1,11 +1,4 @@
-export type TechCategory = 'front-end' | 'back-end' | 'database' | 'tool' | 'testing' | 'version-control';
-
-export type Tech = {
-  label: string;
-  pathname: string;
-  categories: TechCategory[];
-  tags: string[];
-}
+import { Tech } from '@/models';
 
 export const techs: Tech[] = [
   {
