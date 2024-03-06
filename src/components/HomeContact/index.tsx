@@ -1,14 +1,13 @@
-import Root from './Root';
-import Article from './Article';
-import Contact from './Contact';
-import Content from './Content';
-import Figure from './Figure';
-import SocialMedia from './SocialMedia';
+import { ReactNode } from 'react';
 
-export const HomeContact = Object.assign(Root, {
-  Article,
-  Contact,
-  Content,
-  Figure,
-  SocialMedia,
-});
+type HomeContactProps = {
+  children?: ReactNode;
+}
+
+export default function HomeContact({ children }: HomeContactProps) {
+  return (
+    <section className='w-full px-4 py-24 bg-brand-500'>
+      {children}
+    </section>
+  )
+}
