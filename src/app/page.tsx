@@ -12,7 +12,7 @@ import {
   HomeContact,
   ContactsInfo,
 } from '@/components';
-import { knowledges, skills, highlightProjects, contacts } from '@/data';
+import { knowledges, highlightProjects, contacts, techs } from '@/data';
 import Me from '@/assets/imgs/me.png';
 
 export default function Home() {
@@ -88,14 +88,30 @@ export default function Home() {
 
         <HomeKnowledge.SkillsContainer>
           {
-            skills.map(({ image, label }) => (
-              <SkillBadge key={label} image={image} label={label} />
+            techs.filter(({ label }) => {
+              return [
+                'Javascript',
+                'React',
+                'NextJS',
+                'Typescript',
+                'Express',
+                'NestJS',
+                'Google Cloud',
+                'Node',
+                'Jest',
+              ].includes(label)
+            }).map(({ label, pathname }) => (
+              <SkillBadge
+                key={label}
+                label={label}
+                image={`/techs/${pathname}`}
+              />
             ))
           }
         </HomeKnowledge.SkillsContainer>
 
         <Button href={'/conhecimento'}>
-          Saiba mais
+          Veja mais
         </Button>
       </HomeKnowledge>
 
