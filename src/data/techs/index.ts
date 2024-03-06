@@ -122,12 +122,6 @@ export const techs: Tech[] = [
     tags: [],
   },
   {
-    categories: ['tool'],
-    label: 'Markdown',
-    pathname: 'markdown.svg',
-    tags: ['md', 'doc', 'documentation'],
-  },
-  {
     categories: ['back-end'],
     label: 'NestJS',
     pathname: 'nestjs.svg',
@@ -206,12 +200,6 @@ export const techs: Tech[] = [
     tags: ['doc', 'documentation', 'api', 'ui', 'ux', 'design'],
   },
   {
-    categories: ['tool'],
-    label: 'Trello',
-    pathname: 'trello.svg',
-    tags: [],
-  },
-  {
     categories: ['front-end', 'back-end'],
     label: 'Typescript',
     pathname: 'typescript.svg',
@@ -252,5 +240,11 @@ export const techs: Tech[] = [
     label: 'Zustand',
     pathname: 'zustand.png',
     tags: ['dom', 'context', 'api', 'state', 'redux', 'react'],
+  },
+  {
+    categories: ['tool'],
+    label: 'Supabase',
+    pathname: 'supabase.svg',
+    tags: ['PaaS', 'backend', 'platform', 'hosting'],
   },
 ]
