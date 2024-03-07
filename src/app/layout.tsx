@@ -1,17 +1,26 @@
-import './globals.css';
+import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { ChildrenProp } from '@/common';
+import { Footer, Header } from '@/components';
+import { font } from '@/styles';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Luan Florencio | Porfolio",
-  description: "Portfolio by Luan Florencio",
-  applicationName: "Portfolio by Luan Florencio",
+  title: 'Luan Florencio Dev.',
+  description: 'Website e portfolio profissional do desenvolvedor Web Fullstack Luan Florencio. Confira e conheça um pouco mais sobre a carreira e seus projetos pessoais como desenvoledor e programador.',
 }
 
-export default function RootLayout({ children }: ChildrenProp) {
+type RootLayoutProps = {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="pt-br">
-      <body>{children}</body>
+    <html lang='pt-BR' className={font.className}>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

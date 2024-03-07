@@ -1,11 +1,13 @@
-import links from "./links";
-import icons from "./icons";
-import projects from "./projects";
-import contacts from "./contacts";
+import { pages } from './pages';
+import { knowledges } from './knowledges';
+import { highlightProjects } from './highlightProjects';
+import { techs } from './techs';
+import { contacts } from './contacts';
 
 export {
-  links,
-  icons,
-  projects,
+  pages,
+  knowledges,
+  highlightProjects,
+  techs,
   contacts,
 }

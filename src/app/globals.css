@@ -2,70 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .box-container {
-    @apply w-full max-w-[1200px] mx-auto;
-  }
-
-  @keyframes show-navbar {
-    from {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  width: 100%;
-  background: #000;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 74px;
-}
-
-html::-webkit-scrollbar {
-  width: 16px;
-}
-
-html::-webkit-scrollbar-track {
-  background: #151515;
-}
-
-html::-webkit-scrollbar-thumb {
-  background: #555555;
-  border: 3px solid #151515;
-}
-
-html::-webkit-scrollbar-thumb:hover {
-  background: #7f7979;
-}
-
-html::-webkit-scrollbar-button:single-button {
-  background-color: #202020;
-  display: block;
-  border-style: solid;
-}
-
-html::-webkit-scrollbar-button:single-button:vertical:decrement {
-  border-width: 0 8px 8px 8px;
-  border-color: transparent transparent #7f7979 transparent;
-}
-
-html::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-  border-color: transparent transparent #555555 transparent;
-}
-
-html::-webkit-scrollbar-button:single-button:vertical:increment {
-  border-width: 8px 8px 0 8px;
-  border-color: #7f7979 transparent transparent transparent;
-}
-
-html::-webkit-scrollbar-button:vertical:single-button:increment:hover {
-  border-color: #555555 transparent transparent transparent;
+  min-height: 100vh;
+  background: #F0F9FF; /* brand-500 */
+  position: relative;
+  z-index: 0;
 }

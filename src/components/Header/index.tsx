@@ -1,24 +1,14 @@
-"use client";
-
-import { useNavbarContext } from "@/contexts";
-import Avatar from "./Avatar";
-import Button from "./Button";
-import Navbar from "./Navbar";
+import { FlorenciooLogo } from '@/components';
+import Navbar from './Navbar';
 
 export default function Header() {
-  const { showNavbar } = useNavbarContext();
-
   return (
-    <>
-      <header className="w-full py-4 px-5 bg-gray-100 border-b-2 border-gray-300 fixed top-0 left-0 z-40">
-        <div className="box-container flex justify-between items-center">
-          <Avatar />
+    <header className='w-full px-4 py-3 fixed top-0 left-0 z-50 bg-brand-500 border-b border-[#00000010] animate-header opacity-0'>
+      <div className='max-w-default mx-auto flex justify-between items-center select-none'>
+        <FlorenciooLogo role='main' />
 
-          <Button />
-        </div>
-      </header>
-
-      {showNavbar && <Navbar />}
-    </>
+        <Navbar />
+      </div>
+    </header>
   )
 }
