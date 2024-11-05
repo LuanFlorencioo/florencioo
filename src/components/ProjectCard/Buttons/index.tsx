@@ -22,7 +22,7 @@ export default function Buttons({ app, repo }: ButtonsProps) {
 
       {
         repo && (
-          <Link href={`https://github.com/LuanFlorencioo/${repo}`} target='_blank'>
+          <Link href={repo} target='_blank'>
             <button className='w-max h-9 px-7 rounded border border-[#FFFFFF20] bg-transparent flex justify-center items-center gap-2 text-base lg:text-sm text-brand-400'>
               <FaCode /> Código-fonte
             </button>
