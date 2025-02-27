@@ -1,0 +1,18 @@
+{
+	"Header": {
+		"title": "Menu de Navegação",
+		"description": "Navegue facilmente entre as páginas do site através do menu abaixo",
+		"NavMenuItems": {
+			"home": "Início",
+			"about": "Sobre Mim",
+			"skills": "Habilidades",
+			"projects": "Projetos",
+			"contact": "Contato"
+		}
+	},
+	"Metadata": {
+		"title": "Luan Florencio Portfolio",
+		"description": "Portfolio Pessoal Luan Florencio Desenvolvedor Web"
+	},
+	"Home": {}
+}
