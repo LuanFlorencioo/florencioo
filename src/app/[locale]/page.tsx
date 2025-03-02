@@ -26,7 +26,7 @@ export default function Home() {
 							<Link href="/about">
 								<Button
 									variant="default"
-									className="opacity-0 animate-home-greetings-button-about"
+									className="bg-foreground text-background transition-colors opacity-0 animate-home-greetings-button-about"
 								>
 									Sobre Mim
 								</Button>
