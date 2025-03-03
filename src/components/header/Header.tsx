@@ -60,7 +60,7 @@ export function Header() {
 	];
 
 	return (
-		<header className="w-full p-4 border-b bg-background/20 backdrop-blur-sm sticky top-0 left-0">
+		<header className="w-full p-4 border-b bg-background/20 backdrop-blur-sm sticky top-0 left-0 z-10">
 			<div className="w-full max-w-6xl mx-auto flex items-center justify-between">
 				<div className="flex items-center gap-4 lg:gap-8">
 					<Logo>Florencioo</Logo>
