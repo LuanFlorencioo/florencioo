@@ -5,6 +5,8 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/ui/button";
 import { githubLink, linkedinLink } from "@/data/links";
+import { Carousel, CarouselItem } from "@/components/stack-carousel";
+import { backendSkills, frontendSkills, toolsSkills } from "@/data/skills";
 
 export default function Home() {
 	return (
@@ -57,6 +59,37 @@ export default function Home() {
 					<figure className="hidden md:block md:w-[240px] lg:w-[300px] aspect-square opacity-0 animate-home-hero">
 						<Image src={Hero} alt="Hero" />
 					</figure>
+				</div>
+			</section>
+
+			<section className="w-full px-4 relative">
+				<span className="w-full h-16 absolute -top-16 left-0 bg-gradient-to-t from-background" />
+
+				<div className="w-full max-w-6xl mx-auto flex flex-col gap-2 text-muted-foreground relative">
+					{[frontendSkills, backendSkills, toolsSkills].map((skills, i) => (
+						<Carousel
+							key={`skills_${i + 1}`}
+							autoScrollOpts={{
+								direction: i % 2 === 0 ? "backward" : "forward",
+								speed: 1,
+								startDelay: 800,
+								stopOnInteraction: false,
+								stopOnMouseEnter: true,
+							}}
+						>
+							{skills.map(({ label, icon: Icon }) => (
+								<CarouselItem key={label}>
+									<Icon
+										size={
+											44 - 6 * i // [44, 38, 32]
+										}
+									/>
+								</CarouselItem>
+							))}
+						</Carousel>
+					))}
+					<span className="w-8 sm:w-16 md:w-32 h-full absolute top-0 left-0 bg-gradient-to-r from-background" />
+					<span className="w-8 sm:w-16 md:w-32 h-full absolute top-0 right-0 bg-gradient-to-l from-background" />
 				</div>
 			</section>
 		</>
