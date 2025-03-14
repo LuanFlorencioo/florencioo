@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Hero from "/public/hero.png";
-import { Eye, Linkedin } from "lucide-react";
+import { Eye, Linkedin, Mail } from "lucide-react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/ui/button";
+import { Separator } from "@/ui/separator";
+import { Clipboard } from "@/components/clipboard";
+import { ContactLinkButtons } from "@/components/contact-link-buttons";
 import { Carousel, CarouselItem } from "@/components/stack-carousel";
 import {
 	ProjectCard,
@@ -12,6 +15,7 @@ import {
 	ProjectCardCover,
 	ProjectCardTitle,
 } from "@/components/project-card";
+import { email } from "@/data/personal-data";
 import { projects } from "@/data/projects";
 import { githubLink, linkedinLink } from "@/data/links";
 import { backendSkills, frontendSkills, toolsSkills } from "@/data/skills";
@@ -135,6 +139,32 @@ export default async function Home() {
 						</Link>
 						<span className="size-4 rounded-full bg-primary" />
 						<span className="size-2 rounded-full bg-primary" />
+					</div>
+				</div>
+			</section>
+
+			<section className="w-full px-4 py-32 background-space">
+				<div className="w-full max-w-[400px] mx-auto flex flex-col items-center gap-16 static">
+					<div className="w-full flex flex-col items-center gap-2">
+						<p className="font-bold text-lg text-white text-center">
+							Quer me conhecer mais?
+						</p>
+
+						<p className="font-bold text-4xl text-white text-center">
+							Vamos conversar
+						</p>
+					</div>
+
+					<div className="w-full flex flex-col items-center justify-center gap-8">
+						<Clipboard value={email}>
+							<Mail size={14} /> {email}
+						</Clipboard>
+
+						<span className="w-20">
+							<Separator />
+						</span>
+
+						<ContactLinkButtons />
 					</div>
 				</div>
 			</section>

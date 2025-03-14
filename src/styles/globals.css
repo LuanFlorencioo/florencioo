@@ -209,4 +209,13 @@
 		background-size: cover;
 		object-fit: cover;
 	}
+
+	.background-space {
+		background-image: linear-gradient(to bottom, #000000aa, transparent),
+			url(/home-contact-section-background.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		object-fit: cover;
+	}
 }
