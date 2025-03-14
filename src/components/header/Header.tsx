@@ -6,7 +6,6 @@ import {
 	Gem,
 	Home,
 	UserCircle2,
-	Linkedin,
 	Send,
 } from "lucide-react";
 import { Logo } from "./Logo";
@@ -22,6 +21,7 @@ import {
 	NavMenuMobileHeader,
 	NavMenuMobileItem,
 } from "./NavMenu";
+import { LinkedinSVG } from "@/components/linkedin-svg";
 import { githubLink, linkedinLink } from "@/data/links";
 
 export function Header() {
@@ -83,7 +83,7 @@ export function Header() {
 						</ButtonIconLink>
 
 						<ButtonIconLink link={linkedinLink}>
-							<Linkedin />
+							<LinkedinSVG />
 						</ButtonIconLink>
 					</div>
 
@@ -117,7 +117,7 @@ export function Header() {
 							</ButtonIconLink>
 
 							<ButtonIconLink link={linkedinLink}>
-								<Linkedin />
+								<LinkedinSVG />
 							</ButtonIconLink>
 						</div>
 

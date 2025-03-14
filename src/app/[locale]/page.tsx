@@ -19,6 +19,7 @@ import { email } from "@/data/personal-data";
 import { projects } from "@/data/projects";
 import { githubLink, linkedinLink } from "@/data/links";
 import { backendSkills, frontendSkills, toolsSkills } from "@/data/skills";
+import { LinkedinSVG } from "@/components/linkedin-svg";
 
 export default async function Home() {
 	return (
@@ -62,7 +63,7 @@ export default async function Home() {
 									size="icon"
 									className="opacity-0 animate-home-greetings-button-whatsapp"
 								>
-									<Linkedin />
+									<LinkedinSVG />
 								</Button>
 							</Link>
 						</div>
