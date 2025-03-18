@@ -39,22 +39,22 @@ export function Header() {
 		},
 		{
 			label: t("NavMenuItems.about"),
-			href: "about",
+			href: "/about",
 			icon: UserCircle2,
 		},
 		{
 			label: t("NavMenuItems.skills"),
-			href: "skills",
+			href: "/skills",
 			icon: Gem,
 		},
 		{
 			label: t("NavMenuItems.projects"),
-			href: "projects",
+			href: "/projects",
 			icon: FileCode2,
 		},
 		{
 			label: t("NavMenuItems.contact"),
-			href: "contact",
+			href: "/contact",
 			icon: Send,
 		},
 	];
