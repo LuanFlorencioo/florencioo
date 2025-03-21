@@ -113,21 +113,24 @@ export default async function Home() {
 					</h2>
 
 					<div className="w-full flex flex-col items-center justify-center gap-8 relative md:flex-row md:flex-wrap">
-						{projects
-							.slice(0, 3)
-							.map(({ id, name, techs, cover_img, github_url }) => (
-								<ProjectCard key={id} href={github_url}>
-									<ProjectCardCover
-										src={cover_img}
-										alt={`Project ${name} image cover`}
-									/>
+						{projects.slice(0, 3).map((project) => (
+							<ProjectCard
+								key={project.id}
+								repoUrl={project.repoUrl}
+								appUrl={project.appUrl}
+								description={project.description}
+							>
+								<ProjectCardCover
+									src={project.image}
+									alt={`Project ${project.name} image cover`}
+								/>
 
-									<ProjectCardContent>
-										<ProjectCardTitle>{name}</ProjectCardTitle>
-										<ProjectCardBadges badges={techs} />
-									</ProjectCardContent>
-								</ProjectCard>
-							))}
+								<ProjectCardContent>
+									<ProjectCardTitle>{project.name}</ProjectCardTitle>
+									<ProjectCardBadges badges={project.techs} />
+								</ProjectCardContent>
+							</ProjectCard>
+						))}
 					</div>
 
 					<div className="w-full flex items-center justify-center gap-4">
