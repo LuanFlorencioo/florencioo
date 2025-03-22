@@ -147,7 +147,7 @@ export default async function Home() {
 				</div>
 			</section>
 
-			<section className="w-full px-4 py-32 background-space">
+			<section className="w-full px-4 py-32 background-space selection:bg-primary selection:text-white">
 				<div className="w-full max-w-[400px] mx-auto flex flex-col items-center gap-16 static">
 					<div className="w-full flex flex-col items-center gap-2">
 						<p className="font-bold text-lg text-white text-center">
