@@ -43,7 +43,7 @@ export function CardSkillItem({
 	children: React.ReactNode;
 }) {
 	return (
-		<li className="p-2 border rounded flex items-center justify-start gap-4">
+		<li className="p-2 bg-gradient-to-b from-background to-muted dark:to-muted/50 border rounded flex items-center justify-start gap-4">
 			{children}
 		</li>
 	);
