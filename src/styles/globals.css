@@ -45,6 +45,7 @@
 	--font-mono: var(--font-geist-mono);
 
 	--background-poly: url("/poly-grid-light.svg");
+	--background-polka: url("/polka-pattern.png");
 }
 
 .dark {
@@ -83,6 +84,7 @@
 	--sidebar-ring: hsl(20.5 90.2% 48.2%);
 
 	--background-poly: url("/poly-grid-dark.svg");
+	--background-polka: url("/polka-pattern-dark.png");
 }
 
 @theme inline {
@@ -217,5 +219,13 @@
 		background-position: center center;
 		background-size: cover;
 		object-fit: cover;
+	}
+
+	.background-polka {
+		background-image: linear-gradient(
+				to top,
+				var(--color-background),
+				transparent
+			), var(--background-polka);
 	}
 }
