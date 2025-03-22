@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Hero from "/public/hero.png";
-import { Eye, Linkedin, Mail } from "lucide-react";
+import { Eye, Mail } from "lucide-react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/ui/button";
