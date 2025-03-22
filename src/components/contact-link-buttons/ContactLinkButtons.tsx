@@ -4,12 +4,14 @@ import {
 	SiGithub,
 	SiWhatsapp,
 } from "@icons-pack/react-simple-icons";
-import { Popover, PopoverContent, PopoverTrigger } from "@/ui/popover";
 import { Button } from "@/ui/button";
-import { Clipboard } from "@/components/clipboard";
 import { LinkedinSVG } from "@/components/linkedin-svg";
-import { discordUser } from "@/data/personal-data";
-import { githubLink, linkedinLink, whatsappLink } from "@/data/links";
+import {
+	discordLink,
+	githubLink,
+	linkedinLink,
+	whatsappLink,
+} from "@/data/links";
 
 export function ContactLinkButtons() {
 	return (
@@ -47,23 +49,16 @@ export function ContactLinkButtons() {
 				</Link>
 			</Button>
 
-			<Popover>
-				<PopoverTrigger asChild>
-					<Button
-						variant="link"
-						size="icon"
-						className="hover:bg-[#5865F2] hover:text-white"
-					>
-						<SiDiscord />
-					</Button>
-				</PopoverTrigger>
-
-				<PopoverContent className="bg-muted/10 border-none">
-					<Clipboard value={discordUser}>
-						<SiDiscord /> {discordUser}
-					</Clipboard>
-				</PopoverContent>
-			</Popover>
+			<Button
+				variant="link"
+				size="icon"
+				className="hover:bg-[#5865F2] hover:text-white"
+				asChild
+			>
+				<Link href={discordLink} target="_blank">
+					<SiDiscord />
+				</Link>
+			</Button>
 		</div>
 	);
 }

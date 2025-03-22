@@ -7,8 +7,13 @@ import {
 } from "@icons-pack/react-simple-icons";
 import { Clipboard } from "@/components/clipboard";
 import { LinkedinSVG } from "@/components/linkedin-svg";
-import { githubLink, linkedinLink, whatsappLink } from "@/data/links";
-import { email } from "@/data/personal-data";
+import {
+	discordLink,
+	githubLink,
+	linkedinLink,
+	whatsappLink,
+} from "@/data/links";
+import { email, phone } from "@/data/personal-data";
 
 export default function ContactPage() {
 	const squareButtons = [
@@ -28,7 +33,7 @@ export default function ContactPage() {
 			label: "Whatsapp",
 		},
 		{
-			href: "https://discord.com/users/luanflorencio",
+			href: discordLink,
 			icon: <SiDiscord size={36} />,
 			label: "Discord",
 		},
@@ -62,7 +67,7 @@ export default function ContactPage() {
 								<Phone size={18} /> Telefone
 							</h2>
 
-							<Clipboard value="+5521964216903">+55 (21) 96421-6903</Clipboard>
+							<Clipboard value={phone}>+55 (21) 96421-6903</Clipboard>
 						</div>
 					</div>
 				</div>
