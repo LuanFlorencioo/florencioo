@@ -16,7 +16,7 @@ export default function AboutPage() {
 			<section className="w-full px-4 py-16 background-polka selection:bg-primary selection:text-white">
 				<div className="w-full max-w-5xl mx-auto flex items-start justify-between">
 					<div className="w-full max-w-lg flex flex-col items-start gap-8 md:gap-16">
-						<div className="flex flex-col gap-4">
+						<div className="flex flex-col gap-4 animate-to-r">
 							<h1 className="font-bold text-3xl md:text-4xl text-foreground dark:text-primary">
 								Sobre mim
 							</h1>
@@ -38,7 +38,7 @@ export default function AboutPage() {
 							<CVButton />
 						</div>
 
-						<div className="flex flex-col gap-4">
+						<div className="flex flex-col gap-4 animate-appear-r-1 opacity-0">
 							<h2 className="font-bold text-xl md:text-2xl text-muted-foreground">
 								Minha jornada
 							</h2>
@@ -67,7 +67,7 @@ export default function AboutPage() {
 						</div>
 					</div>
 
-					<figure className="hidden lg:block w-[350px] aspect-square opacity-0 animate-home-hero">
+					<figure className="hidden lg:block w-[350px] aspect-square opacity-0 animate-hero">
 						<Image src={Hero} alt="Hero" />
 					</figure>
 				</div>
@@ -75,7 +75,7 @@ export default function AboutPage() {
 
 			<section className="w-full px-4 pb-32 selection:bg-primary selection:text-white">
 				<div className="w-full max-w-5xl mx-auto flex flex-col items-start gap-8 md:gap-16">
-					<div className="w-full max-w-lg flex flex-col gap-4">
+					<div className="w-full max-w-lg flex flex-col gap-4 animate-appear-r-2 opacity-0">
 						<h2 className="font-bold text-xl md:text-2xl text-muted-foreground">
 							Sede de conhecimento
 						</h2>
@@ -101,7 +101,7 @@ export default function AboutPage() {
 						</p>
 					</div>
 
-					<div className="w-full max-w-lg flex flex-col gap-4">
+					<div className="w-full max-w-lg flex flex-col gap-4 animate-appear-r-3 opacity-0">
 						<h2 className="font-bold text-xl md:text-2xl text-muted-foreground">
 							Hobbies
 						</h2>

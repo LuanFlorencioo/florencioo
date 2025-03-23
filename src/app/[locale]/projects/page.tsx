@@ -10,7 +10,7 @@ import { projects } from "@/data/projects";
 export default function ProjectsPage() {
 	return (
 		<section className="w-full px-4 pt-16 md:pt-32 pb-32 background-polka selection:bg-primary selection:text-white">
-			<div className="w-full max-w-7xl mx-auto flex flex-col items-center gap-8 md:gap-16">
+			<div className="w-full max-w-7xl mx-auto flex flex-col items-center gap-8 md:gap-16 animate-appear opacity-0">
 				<h1 className="font-bold text-3xl md:text-4xl lg:text-5xl dark:text-primary">
 					Projetos
 				</h1>

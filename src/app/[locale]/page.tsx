@@ -27,13 +27,13 @@ export default async function Home() {
 			<section className="w-full px-4 py-48 background-poly">
 				<div className="w-full max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-32">
 					<div className="pl-5 flex flex-col gap-4 relative">
-						<span className="w-1 h-full bg-foreground absolute top-0 left-0 animate-track" />
+						<span className="w-1 h-full bg-foreground absolute top-0 left-0 opacity-0 animate-appear-r-3" />
 
-						<h1 className="font-bold text-5xl select-none animate-home-greetings-h1">
+						<h1 className="font-bold text-5xl select-none animate-to-b">
 							Luan Florencio
 						</h1>
 
-						<p className="max-w-[300px] font-light text-2xl select-none opacity-0 animate-home-greetings-p">
+						<p className="max-w-[300px] font-light text-2xl select-none opacity-0 animate-appear-b-1">
 							Desenvolvedor Web FullStack | Frontend
 						</p>
 
@@ -41,7 +41,7 @@ export default async function Home() {
 							<Link href="/about">
 								<Button
 									variant="default"
-									className="bg-foreground text-background transition-colors opacity-0 animate-home-greetings-button-about"
+									className="bg-foreground text-background transition-colors opacity-0 animate-appear-b-2"
 								>
 									Sobre Mim
 								</Button>
@@ -51,7 +51,7 @@ export default async function Home() {
 								<Button
 									variant="outline"
 									size="icon"
-									className="opacity-0 animate-home-greetings-button-github"
+									className="opacity-0 animate-appear-b-3"
 								>
 									<SiGithub />
 								</Button>
@@ -61,7 +61,7 @@ export default async function Home() {
 								<Button
 									variant="outline"
 									size="icon"
-									className="opacity-0 animate-home-greetings-button-whatsapp"
+									className="opacity-0 animate-appear-b-4"
 								>
 									<LinkedinSVG />
 								</Button>
@@ -69,7 +69,7 @@ export default async function Home() {
 						</div>
 					</div>
 
-					<figure className="hidden md:block md:w-[240px] lg:w-[300px] aspect-square opacity-0 animate-home-hero">
+					<figure className="hidden md:block md:w-[240px] lg:w-[300px] aspect-square opacity-0 animate-hero">
 						<Image src={Hero} alt="Hero" />
 					</figure>
 				</div>
