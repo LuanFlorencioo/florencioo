@@ -1,9 +1,12 @@
 "use client";
 
 import { Button } from "@/ui/button";
-import { SquareArrowOutUpRight } from "lucide-react";
 
-export function CVButton() {
+export function CVButton({
+	children,
+}: {
+	children: React.ReactNode;
+}) {
 	const openCV = () => {
 		const pdfUrl = "/cv-luanflorencio.pdf";
 		window.open(pdfUrl, "_blank");
@@ -11,7 +14,7 @@ export function CVButton() {
 
 	return (
 		<Button variant="secondary" onClick={openCV}>
-			Currículo (CV) <SquareArrowOutUpRight />
+			{children}
 		</Button>
 	);
 }

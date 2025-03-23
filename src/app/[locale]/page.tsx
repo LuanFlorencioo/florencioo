@@ -20,8 +20,11 @@ import { projects } from "@/data/projects";
 import { githubLink, linkedinLink } from "@/data/links";
 import { backendSkills, frontendSkills, toolsSkills } from "@/data/skills";
 import { LinkedinSVG } from "@/components/linkedin-svg";
+import { useTranslations } from "next-intl";
 
-export default async function Home() {
+export default function Home() {
+	const t = useTranslations("Home");
+
 	return (
 		<>
 			<section className="w-full px-4 py-48 background-poly">
@@ -34,7 +37,7 @@ export default async function Home() {
 						</h1>
 
 						<p className="max-w-[300px] font-light text-2xl select-none opacity-0 animate-appear-b-1">
-							Desenvolvedor Web FullStack | Frontend
+							{t("Welcome.text")}
 						</p>
 
 						<div className="flex items-center gap-2">
@@ -43,7 +46,7 @@ export default async function Home() {
 									variant="default"
 									className="bg-foreground text-background transition-colors opacity-0 animate-appear-b-2"
 								>
-									Sobre Mim
+									{t("Welcome.button")}
 								</Button>
 							</Link>
 
@@ -70,7 +73,7 @@ export default async function Home() {
 					</div>
 
 					<figure className="hidden md:block md:w-[240px] lg:w-[300px] aspect-square opacity-0 animate-hero">
-						<Image src={Hero} alt="Hero" />
+						<Image src={Hero} alt={t("Welcome.illustration-alt")} />
 					</figure>
 				</div>
 			</section>
@@ -109,7 +112,7 @@ export default async function Home() {
 			<section className="w-full px-4 py-16 bg-gradient-to-b from-background via-foreground/20 to-background dark:via-background dark:to-primary/25">
 				<div className="w-full max-w-6xl mx-auto flex flex-col items-center gap-16">
 					<h2 className="font-bold text-2xl md:text-3xl selection:bg-primary">
-						Principais Projetos
+						{t("Projects.title")}
 					</h2>
 
 					<div className="w-full flex flex-col items-center justify-center gap-8 relative md:flex-row md:flex-wrap">
@@ -138,7 +141,7 @@ export default async function Home() {
 						<span className="size-4 rounded-full bg-primary" />
 						<Link href="/projects">
 							<Button className="flex items-center gap-2" size="lg">
-								<Eye /> Ver todos projetos
+								<Eye /> {t("Projects.button")}
 							</Button>
 						</Link>
 						<span className="size-4 rounded-full bg-primary" />
@@ -151,11 +154,11 @@ export default async function Home() {
 				<div className="w-full max-w-[400px] mx-auto flex flex-col items-center gap-16 static">
 					<div className="w-full flex flex-col items-center gap-2">
 						<p className="font-bold text-lg text-white text-center">
-							Quer me conhecer mais?
+							{t("Contact.title")}
 						</p>
 
 						<p className="font-bold text-4xl text-white text-center">
-							Vamos conversar
+							{t("Contact.text")}
 						</p>
 					</div>
 
