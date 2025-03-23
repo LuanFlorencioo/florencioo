@@ -6,7 +6,7 @@ export function CardSkills({
 	children: React.ReactNode;
 }) {
 	return (
-		<div className="w-full max-w-[375px] sm:max-w-[680px] md:max-w-[750px] lg:max-w-[320px] px-2 pt-8 pb-2 lg:border rounded-md flex flex-col lg:items-center gap-4">
+		<div className="w-full max-w-[375px] sm:max-w-[680px] md:max-w-[750px] lg:max-w-[320px] px-2 pt-8 pb-2 lg:bg-background lg:border rounded-md flex flex-col lg:items-center gap-4">
 			{children}
 		</div>
 	);
