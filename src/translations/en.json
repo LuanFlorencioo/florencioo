@@ -14,5 +14,60 @@
 		"title": "Luan Florencio Portfolio",
 		"description": "Luan Florencio Web Developer Portfolio"
 	},
-	"Home": {}
+	"Home": {
+		"Welcome": {
+			"text": "Web FullStack Developer",
+			"button": "About Me",
+			"illustration-alt": "Hero Illustration"
+		},
+		"Projects": {
+			"title": "Some Projects",
+			"button": "See more"
+		},
+		"Contact": {
+			"title": "Want to know more about me?",
+			"text": "Let's talk"
+		}
+	},
+	"About": {
+		"main-title": "About me",
+		"main-text-1": "I'm a Web Developer passionate about creating efficient and intuitive digital experiences. Graduated in Systems Analysis and Development, I am proficient in Fullstack Web Development, specializing in technologies such as JavaScript, TypeScript, React, Next.js, Node.js and NestJS.",
+		"main-text-2": "I am driven by the constant desire to learn new technologies to improve my projects and increasingly explore this fascinating universe of programming.",
+		"cv-button": "Curriculum (CV)",
+		"MyJourney": {
+			"title": "My journey",
+			"text-1": "My journey into technology began in my childhood, when I developed a great curiosity for computers, applications and programs. Since then, I have been improving my skills to build robust and scalable applications.",
+			"text-2": "In 2023, I completed the Fullstack Web Development course at Kenzie Academy Brasil, an online programming school, where I spent 12 months in intensive learning, covering both front-end and back-end. The following year, in 2024, I graduated in Systems Analysis and Development from Unopar."
+		},
+		"ThirstForKnowledge": {
+			"title": "Thirst for knowledge",
+			"text-1": "I recognize my ability not only to learn, but also to delve deeper into any subject that sparks my attention and curiosity, be it programming, art, astronomy or science.",
+			"text-2": "My goal in acquiring new knowledge is not to impress others, but to expand my intellectual horizons and better understand the world around me.",
+			"text-3": "I will always be willing to absorb everything that I can learn, understand and assimilate. For me, there is never too much knowledge. I have an incessant thirst for learning, a pioneering spirit that questions, investigates and seeks answers based on logic and reason."
+		},
+		"Hobbies": {
+			"title": "Hobbies",
+			"hobbies": {
+				"football": "Football",
+				"read": "Read books",
+				"game": "Games",
+				"gym": "Gym",
+				"movie": "Movies"
+			},
+			"text": "When I'm not programming, I like to read books, play video games, watch movies and exercise, such as weight training, running or soccer."
+		}
+	},
+	"Skills": {
+		"title": "Skills",
+		"complementary": "Complementary"
+	},
+	"Projects": {
+		"title": "Projects"
+	},
+	"Contact": {
+		"title": "Contact",
+		"text": "I hope you enjoyed your visit to my personal portfolio! If my work caught your attention or if you would like to know more about me, please feel free to get in touch.",
+		"label-email": "Email",
+		"label-phone": "Phone number"
+	}
 }

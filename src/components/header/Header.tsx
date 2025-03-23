@@ -6,7 +6,6 @@ import {
 	Gem,
 	Home,
 	UserCircle2,
-	Linkedin,
 	Send,
 } from "lucide-react";
 import { Logo } from "./Logo";
@@ -22,6 +21,7 @@ import {
 	NavMenuMobileHeader,
 	NavMenuMobileItem,
 } from "./NavMenu";
+import { LinkedinSVG } from "@/components/linkedin-svg";
 import { githubLink, linkedinLink } from "@/data/links";
 
 export function Header() {
@@ -39,28 +39,28 @@ export function Header() {
 		},
 		{
 			label: t("NavMenuItems.about"),
-			href: "about",
+			href: "/about",
 			icon: UserCircle2,
 		},
 		{
 			label: t("NavMenuItems.skills"),
-			href: "skills",
+			href: "/skills",
 			icon: Gem,
 		},
 		{
 			label: t("NavMenuItems.projects"),
-			href: "projects",
+			href: "/projects",
 			icon: FileCode2,
 		},
 		{
 			label: t("NavMenuItems.contact"),
-			href: "contact",
+			href: "/contact",
 			icon: Send,
 		},
 	];
 
 	return (
-		<header className="w-full p-4 border-b bg-background/20 backdrop-blur-sm sticky top-0 left-0">
+		<header className="w-full p-4 border-b bg-background/20 backdrop-blur-sm sticky top-0 left-0 z-10">
 			<div className="w-full max-w-6xl mx-auto flex items-center justify-between">
 				<div className="flex items-center gap-4 lg:gap-8">
 					<Logo>Florencioo</Logo>
@@ -83,7 +83,7 @@ export function Header() {
 						</ButtonIconLink>
 
 						<ButtonIconLink link={linkedinLink}>
-							<Linkedin />
+							<LinkedinSVG />
 						</ButtonIconLink>
 					</div>
 
@@ -117,7 +117,7 @@ export function Header() {
 							</ButtonIconLink>
 
 							<ButtonIconLink link={linkedinLink}>
-								<Linkedin />
+								<LinkedinSVG />
 							</ButtonIconLink>
 						</div>
 
