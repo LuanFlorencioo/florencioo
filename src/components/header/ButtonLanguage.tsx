@@ -25,6 +25,10 @@ export function ButtonLanguage() {
 				<Link href="/" locale="pt">
 					<DropdownMenuItem>Português</DropdownMenuItem>
 				</Link>
+
+				<Link href="/" locale="es">
+					<DropdownMenuItem>Español</DropdownMenuItem>
+				</Link>
 			</DropdownMenuContent>
 		</DropdownMenu>
 	);

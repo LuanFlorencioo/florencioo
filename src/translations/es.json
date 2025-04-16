@@ -1,0 +1,73 @@
+{
+	"Header": {
+		"title": "Menú de navegación",
+		"description": "Navega fácilmente entre las páginas del sitio web utilizando el menú a continuación",
+		"NavMenuItems": {
+			"home": "Inicio",
+			"about": "Sobre mí",
+			"skills": "Habilidades",
+			"projects": "Proyectos",
+			"contact": "Contacto"
+		}
+	},
+	"Metadata": {
+		"title": "Luan Florencio Portafolio",
+		"description": "Luan Florencio Portafolio de Desarrollador Web"
+	},
+	"Home": {
+		"Welcome": {
+			"text": "Desarrollador Web FullStack",
+			"button": "Sobre mí",
+			"illustration-alt": "Ilustración de héroe"
+		},
+		"Projects": {
+			"title": "Algunos Proyectos",
+			"button": "Ver más"
+		},
+		"Contact": {
+			"title": "¿Quieres saber más sobre mí?",
+			"text": "Hablemos"
+		}
+	},
+	"About": {
+		"main-title": "Sobre mí",
+		"main-text-1": "Soy un Desarrollador Web apasionado por crear experiencias digitales eficientes e intuitivas. Graduado en Análisis y Desarrollo de Sistemas, soy competente en Desarrollo Web Fullstack, especializándome en tecnologías como JavaScript, TypeScript, React, Next.js, Node.js y NestJS.",
+		"main-text-2": "Estoy impulsado por el deseo constante de aprender nuevas tecnologías para mejorar mis proyectos y explorar cada vez más este fascinante universo de la programación.",
+		"cv-button": "Currículum (CV)",
+		"MyJourney": {
+			"title": "Mi trayectoria",
+			"text-1": "Mi trayectoria en la tecnología comenzó en mi infancia, cuando desarrollé una gran curiosidad por las computadoras, aplicaciones y programas. Desde entonces, he estado mejorando mis habilidades para construir aplicaciones robustas y escalables.",
+			"text-2": "En 2023, completé el curso de Desarrollo Web Fullstack en Kenzie Academy Brasil, una escuela de programación en línea, donde pasé 12 meses en un aprendizaje intensivo, cubriendo tanto el front-end como el back-end. Al año siguiente, en 2024, me gradué en Análisis y Desarrollo de Sistemas de Unopar."
+		},
+		"ThirstForKnowledge": {
+			"title": "Sed de conocimiento",
+			"text-1": "Reconozco mi capacidad no solo para aprender, sino también para profundizar en cualquier tema que despierte mi atención y curiosidad, ya sea programación, arte, astronomía o ciencia.",
+			"text-2": "Mi objetivo al adquirir nuevos conocimientos no es impresionar a los demás, sino expandir mis horizontes intelectuales y comprender mejor el mundo que me rodea.",
+			"text-3": "Siempre estaré dispuesto a absorber todo lo que pueda aprender, comprender y asimilar. Para mí, el conocimiento nunca está de más. Tengo una sed incesante de aprendizaje, un espíritu pionero que cuestiona, investiga y busca respuestas basadas en la lógica y la razón."
+		},
+		"Hobbies": {
+			"title": "Pasatiempos",
+			"hobbies": {
+				"football": "Fútbol",
+				"read": "Leer libros",
+				"game": "Juegos",
+				"gym": "Gimnasio",
+				"movie": "Películas"
+			},
+			"text": "Cuando no estoy programando, me gusta leer libros, jugar videojuegos, ver películas y hacer ejercicio, como levantamiento de pesas, correr o jugar al fútbol."
+		}
+	},
+	"Skills": {
+		"title": "Habilidades",
+		"complementary": "Complementarias"
+	},
+	"Projects": {
+		"title": "Proyectos"
+	},
+	"Contact": {
+		"title": "Contacto",
+		"text": "¡Espero que hayas disfrutado de tu visita a mi portafolio personal! Si te ha llamado la atención mi trabajo o quieres saber más sobre mí, no dudes en contactarme.",
+		"label-email": "Correo electrónico",
+		"label-phone": "Número de teléfono"
+	}
+}
