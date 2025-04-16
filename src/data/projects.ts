@@ -11,6 +11,17 @@ export type ProjectData = {
 
 export const projects: ProjectData[] = [
 	{
+		id: "4b6beabd-1eb2-41a0-87b2-e86a037adeba",
+		name: "Gerador UUID",
+		description:
+			"Um gerador simples de UUID v4 com cópia para a área de transferência.",
+		techs: ["VueJS", "TailwindCSS", "Motion"],
+		tags: ["vuejs", "javascript", "typescript"],
+		image: "/project-covers/gerador-uuid.png",
+		repoUrl: "https://github.com/LuanFlorencioo/gerador-uuid/",
+		appUrl: "https://gerador-uuid.vercel.app/",
+	},
+	{
 		id: "3546eeb3-66d9-49a0-8147-d2ca82fef167",
 		name: "News Homepage",
 		description:
@@ -31,6 +42,16 @@ export const projects: ProjectData[] = [
 		image: "/project-covers/todo-app.png",
 		repoUrl: "https://github.com/LuanFlorencioo/todo-app/",
 		appUrl: "https://lf-todo-app.vercel.app/",
+	},
+	{
+		id: "1c4052a5-b046-4f71-b28a-dc8ff9847f82",
+		name: "GitSearch",
+		description: "Uma aplicação de busca de repositórios e usuários do GitHub.",
+		techs: ["Angular", "SCSS"],
+		tags: ["angular", "typescript", "scss", "sass", "github"],
+		image: "/project-covers/gitsearch.png",
+		repoUrl: "https://github.com/LuanFlorencioo/angular-gitsearch/",
+		appUrl: "https://angular-gitsearch.vercel.app/",
 	},
 	{
 		id: "d4fd96bd-7d85-4184-a65e-374469ca6587",
